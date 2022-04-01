@@ -9,6 +9,6 @@ scanf("%f", &m);
 printf("Enter height in m ");
 scanf("%f",&h);
 e= m*g*h;
-printf("Kinetic Energy is %f J",e);
+printf("potential Energy is %f J",e);
 getch();
 }
