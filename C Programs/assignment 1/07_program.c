@@ -5,8 +5,8 @@ void main()
     int tdays, year, week, day,t;
     printf("Enter days to convert ");
     scanf("%d",&tdays);
-    year = tdays/364;
-    t = tdays%364;
+    year = tdays/365;
+    t = tdays%365;
     week = t/7;
     t = t%7;
     day = t;
