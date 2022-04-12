@@ -10,7 +10,7 @@ void main()
     i=num1;
     while(i<=num2)
     {
-        if(i%17==0)
+        if(i%17!=0)
         {
             printf("%d\n", i);
             add=add+i;
