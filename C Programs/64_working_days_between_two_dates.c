@@ -5,7 +5,7 @@ If toDate is less than fromDate it should show the toDate should be greater than
 #include<stdio.h>
 void main ()
 {
-int d1,d2,m1,m2,y1,y2, days,month,i, month1=0, month2=0 , month3=0,day1, day2, day3=0,year=0,lyear=0,dyear;
+int d1,d2,m1,m2,y1,y2, days,month,i, month1=0, month2=0 , month3=0,day1, day2, day3=0,year=0,lyear=0,dyear,holiday;
 system("cls");
 printf("Enter fromDate in dd mm yyyy format : "); 
 scanf("%d %d %d",&d1, &m1, &y1);
@@ -19,7 +19,9 @@ else
 if(y2==y1 && m2==m1 && d1<d2) 
 {
     days=d2-d1;
-    printf("%d days are there in between these two dates ",days);
+    holiday=(days/7)*2;
+    days=days-holiday;
+    printf("working days=%d ",days);
 }
 else
 if(y2==y1 && m1>m2)
@@ -64,7 +66,9 @@ if(y2==y1 && m1<m2)
             day2=(31-d1);
         }
         days= day1+day2+d2; //calculate total days
-        printf("%d days are there in between these two dates",days);
+        holiday = (days/7)*2;
+        days=days-holiday;
+        printf("working days=%d",days);
     }
     else
     {
@@ -101,7 +105,9 @@ if(y2==y1 && m1<m2)
             day2=(31-d1);
         }
         days= day1+day2+d2;
-        printf("%d days are there in between these two dates",days);
+        holiday=(days/7)*2;
+        days=days-holiday;
+        printf("working days= %d ",days);
     }
 }
 else
@@ -184,7 +190,9 @@ else
         }
         day3=(29*month1)+(30*month2)+(31*month3);
         days=dyear+day1+day2+day3+d2;
-        printf("%d days are there in between these two dates",days);
+        holiday=(days/7)*2;
+        days=days-holiday;
+        printf("working days = %d ",days);
     }
     else   // same for non leap year
     {
@@ -287,7 +295,9 @@ else
         }
         
         days=dyear+day1+day2+day3+d2;
-        printf("%d days are there in between these two dates",days);
+        holiday=(days/7)*2;
+        days=days-holiday;
+        printf("working days=%d",days);
     }
 }
 
