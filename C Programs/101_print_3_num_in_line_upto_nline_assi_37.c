@@ -1,6 +1,8 @@
 #include<stdio.h>
 void main ()
 {
+    int c,r,n,l;
+    system("cls");
     printf("Enter number of lines ");
     scanf("%d",&l);
     n=1;
