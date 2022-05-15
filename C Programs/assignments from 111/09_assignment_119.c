@@ -13,5 +13,5 @@ void main()
         if(a[i]!=17)
         sum=sum+a[i];
     }
-    printf("Sum of all values expect 17= %d",sum);
+    printf("Sum of all values except 17= %d",sum);
 }
