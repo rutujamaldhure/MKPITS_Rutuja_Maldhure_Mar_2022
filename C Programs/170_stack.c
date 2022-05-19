@@ -1,5 +1,5 @@
 #include<stdio.h>
-int top=3,n=10,stck[10]={1,2,5,7},temp,x,i;
+int top=3,n=10,stck[10]={1,2,5,8},temp,x,i;
 void push()
 {
     if(top==n-1)
